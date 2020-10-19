@@ -14,18 +14,20 @@ public class TestaOrdenacao {
 		};
 		
 		
+		
 		ordenar(produtos, produtos.length);		
 		
+		System.out.println("");
 		for (Produto produto : produtos) {
 			System.out.println(produto.getNome() + " custa " + produto.getPreco());
 		}
 		
-		System.out.println("");
+//		System.out.println("");
 		int maisBarato = buscaMenor(produtos, 0, 4);
-		System.out.println(maisBarato);
-		System.out.println("O carro " + produtos[maisBarato].getNome() 
-									  + " é o mais barato, e custa: " 
-									  + produtos[maisBarato].getPreco());
+//		System.out.println(maisBarato);
+//		System.out.println("O carro " + produtos[maisBarato].getNome() 
+//									  + " é o mais barato, e custa: " 
+//									  + produtos[maisBarato].getPreco());
 
 	}
 	
@@ -33,11 +35,20 @@ public class TestaOrdenacao {
 	private static void ordenar(Produto[] produtos, int tamanhoArrayProdutos) {
 
 		for (int atual = 0; atual < tamanhoArrayProdutos -1; atual++) {
+			
+			System.out.println("Estou no indice " + atual + "");
+			
 			int menor = buscaMenor(produtos, atual, tamanhoArrayProdutos - 1);
+			
+			System.out.println("Trocando "	+ atual	+ "	com	o "	+ menor);
+			
 			Produto produtoAtual = produtos[atual];
 			Produto produtoMenor = produtos[menor];
+			
+			System.out.println("Trocando " + produtoAtual.getNome() + " por " + produtoMenor.getNome());
+			
 			produtos[atual] = produtoMenor;
-			produtos[menor] = produtoAtual;
+			produtos[menor] = produtoAtual;			
 			
 		}
 		
