@@ -13,9 +13,7 @@ public class TestaOrdenacao {
 				
 		};
 		
-		int maisBarato = buscaMenor(produtos, 0, 4);
-		
-		//For que realiza a ordenação
+		//For que realiza a ordenação pela seleção do menor valor
 		for (int atual = 0; atual <= produtos.length -1; atual++) {
 			int menor = buscaMenor(produtos, atual, produtos.length - 1);
 			Produto produtoAtual = produtos[atual];
@@ -29,11 +27,12 @@ public class TestaOrdenacao {
 			System.out.println(produto.getNome() + " custa " + produto.getPreco());
 		}
 		
-//		int maisBarato = buscaMenor(produtos, 0, 4);
-//		System.out.println(maisBarato);
-//		System.out.println("O carro " + produtos[maisBarato].getNome() 
-//									  + " é o mais barato, e custa: " 
-//									  + produtos[maisBarato].getPreco());
+		System.out.println("");
+		int maisBarato = buscaMenor(produtos, 0, 4);
+		System.out.println(maisBarato);
+		System.out.println("O carro " + produtos[maisBarato].getNome() 
+									  + " é o mais barato, e custa: " 
+									  + produtos[maisBarato].getPreco());
 
 	}
 	
