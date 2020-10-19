@@ -10,7 +10,7 @@ public class Produto {
 		this.setNome(nome);
 		this.setPreco(preco);
 	}
-
+	
 	public String getNome() {
 		return nome;
 	}
