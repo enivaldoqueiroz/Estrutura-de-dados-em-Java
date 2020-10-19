@@ -7,5 +7,5 @@
 ![](https://github.com/enivaldoqueiroz/Estrutura-de-dados-em-Java/blob/main/imagens/002_img.png)
 #### Indice do menhor valor modificado pos ordenação.
 ![](https://github.com/enivaldoqueiroz/Estrutura-de-dados-em-Java/blob/main/imagens/003_img.png)
-#### Visialização da traoca de posição dos elementos durante a ordenação de seleção do menor valor.
+#### Visialização da troca de posição dos elementos durante a ordenação de seleção pelo menor valor.
 ![](https://github.com/enivaldoqueiroz/Estrutura-de-dados-em-Java/blob/main/imagens/004_img.png)
